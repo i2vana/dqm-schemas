@@ -1,0 +1,13 @@
+
+- title: Examples
+  content: |-
+    The content of this example. 
+
+  snippets:
+    - language: json
+      code: |-
+        { "http://example.com/myObject": {
+              "extraneous_nodes": 2
+           }
+        }
+      base-uri: http://example.com/

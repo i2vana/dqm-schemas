@@ -1,0 +1,12 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'DQM extraneous nodes'
+$defs:
+  Measure:
+    properties:
+      value:
+        type: number
+      units:
+        $ref: bblocks://ogc.ogc-utils.iri-or-curie
+oneOf:
+  - $ref: "#/$defs/Measure"
+

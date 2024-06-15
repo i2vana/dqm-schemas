@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "dqm": "http://www.opengis.net/def/metamodel/isodqm/",
+    "value": "dqm:measureValue",
+    "units": {
+      "@type": "@id",
+      "@id": "dqm:units",
+      "@base": "https://qudt.org/vocab/unit/"
+    }
+  }
+}
