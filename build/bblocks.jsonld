@@ -103,10 +103,10 @@
       }
     }
   ],
-  "name": "Building Blocks - My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-06-12T14:06:22.220684",
+  "name": "Building Blocks - Data Quality Measures Schemas",
+  "abstract": "Implementation models (JSON/YAML schemas, but potentially XML and RDF)\n",
+  "description": "Data Quality Measures may require complex (non-scalar) value objects, in which case canonical schemas for these values are required to achieve interoperability.\n",
+  "modified": "2024-06-15T14:14:34.245531",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"86d544ee272c5495ae35236b0871ada235e29d6e",
@@ -126,19 +126,19 @@
     "skos:ConceptScheme",
     "dcat:Catalog"
   ],
-  "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
+  "skos:prefLabel": "Building Blocks - Data Quality Measures Schemas",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
+      "itemIdentifier": "ogc.dqm.schemas.extraneous_nodes",
       "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "name": "DQM 21 extraneous nodes",
+      "abstract": "number of faulty point-curve connections in the dataset",
       "status": "under-development",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-register",
+      "register": "dqm-schema-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-06-12",
+      "dateOfLastChange": "2024-06-15",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -151,37 +151,33 @@
       "tags": [
         "templates"
       ],
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/mySchema/context.jsonld",
+      "shaclRules": {},
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/mySchema/schema.json"
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/mySchema/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/mySchema/",
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/extraneous_nodes/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/extraneous_nodes/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/extraneous_nodes/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/bbr/template/mySchema/",
+      "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/dqm/schemas/extraneous_nodes/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/markdown/bbr/template/mySchema/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/markdown/dqm/schemas/extraneous_nodes/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/json-full/dqm/schemas/extraneous_nodes/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/slate-build/bbr/template/mySchema/"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/slate-build/dqm/schemas/extraneous_nodes/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/bblock/ogc.bbr.template.mySchema"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/bblock/ogc.dqm.schemas.extraneous_nodes"
         }
       },
       "@type": [
@@ -191,63 +187,58 @@
       ]
     },
     {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
+      "itemIdentifier": "ogc.dqm.schemas.measure",
+      "$schema": "metaschema.yaml",
+      "name": "Measure",
+      "abstract": "Utility datatype for a Measure, a numerical value with a units of measure. The QUDT namespaces is defined by default, but may be overridden by a well formed URI or CURIE pattern.",
       "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2024-06-12",
+      "register": "dqm-schema-register",
+      "version": "0.1",
+      "dateOfLastChange": "2024-06-15",
+      "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
         }
       ],
-      "maturity": "development",
+      "maturity": "mature",
       "scope": "unstable",
-      "dependsOn": [
-        "ogc.bbr.template.mySchema",
-        "ogc.geo.features.feature"
-      ],
       "tags": [
-        "feature",
-        "examples"
+        "templates"
       ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/mySchema/rules.shacl"
-        ]
-      },
+      "shaclRules": {},
+      "dependsOn": [
+        "ogc.ogc-utils.iri-or-curie"
+      ],
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/myFeature/schema.json"
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/myFeature/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/bbr/template/myFeature/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/myFeature/",
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/bbr/template/myFeature/",
+      "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/dqm/schemas/measure/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/markdown/dqm/schemas/measure/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/json-full/dqm/schemas/measure/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/slate-build/bbr/template/myFeature/"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/generateddocs/slate-build/dqm/schemas/measure/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/bblock/ogc.bbr.template.myFeature"
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/bblock/ogc.dqm.schemas.measure"
         }
       },
       "@type": [

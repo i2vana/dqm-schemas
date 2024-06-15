@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "extraneous_nodes": "dqm:21",
+    "dqm": "http://www.opengis.net/def/metamodel/isodqm/",
+    "@version": 1.1
+  }
+}

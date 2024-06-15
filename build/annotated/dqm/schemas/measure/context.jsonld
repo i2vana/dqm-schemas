@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "value": "dqm:measureValue",
+    "units": {
+      "@context": {
+        "@base": "https://qudt.org/vocab/unit/"
+      },
+      "@type": "@id",
+      "@id": "dqm:units"
+    },
+    "dqm": "http://www.opengis.net/def/metamodel/isodqm/",
+    "@version": 1.1
+  }
+}

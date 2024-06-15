@@ -1,0 +1,6 @@
+@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] dqm:measureValue 2.72e+01 ;
+    dqm:units <http://mydomain.org/units/foogles-per-thrunge> .
+

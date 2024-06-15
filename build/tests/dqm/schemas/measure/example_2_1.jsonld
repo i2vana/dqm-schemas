@@ -1,0 +1,5 @@
+{
+  "value": 27.2,
+  "units": "http://mydomain.org/units/foogles-per-thrunge",
+  "@context": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld"
+}

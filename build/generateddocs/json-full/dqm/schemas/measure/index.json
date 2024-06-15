@@ -1,0 +1,88 @@
+
+
+{
+  "itemIdentifier": "ogc.dqm.schemas.measure",
+  "$schema": "metaschema.yaml",
+  "name": "Measure",
+  "abstract": "Utility datatype for a Measure, a numerical value with a units of measure. The QUDT namespaces is defined by default, but may be overridden by a well formed URI or CURIE pattern.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "dqm-schema-register",
+  "version": "0.1",
+  "dateOfLastChange": "2024-06-15",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "templates"
+  ],
+  "shaclRules": {},
+  "dependsOn": [
+    "ogc.ogc-utils.iri-or-curie"
+  ],
+  "ldContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/_sources/measure/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/dqm/schemas/measure/",
+  "description": "## My Schema\n\nDefines a set of properties that may be used in **any** JSON schema.\n\n> Note these properties may be used in the \"properties\" sub-component of a GeoJSON object, as a simple object\n\nThe numeric properties \"b\" and \"c\" have an example SHACL rule that if c is present, then c > b",
+  "examples": [
+    {
+      "title": "Default units",
+      "content": "example using default namespace for UOM",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{ \"value\": 3,\n  \"units\": \"M\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"value\": 3,\n  \"units\": \"M\",\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] dqm:measureValue 3 ;\n    dqm:units <https://qudt.org/vocab/unit/M> .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Custom units",
+      "content": "example using a custom namespace for UOM",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{ \"value\": 27.2,\n  \"units\": \"http://mydomain.org/units/foogles-per-thrunge\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"value\": 27.2,\n  \"units\": \"http://mydomain.org/units/foogles-per-thrunge\",\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] dqm:measureValue 2.72e+01 ;\n    dqm:units <http://mydomain.org/units/foogles-per-thrunge> .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/measure/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: DQM extraneous nodes\n$defs:\n  Measure:\n    properties:\n      value:\n        type: number\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/measureValue\n      units:\n        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml\n        x-jsonld-type: '@id'\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/units\n        x-jsonld-base: https://qudt.org/vocab/unit/\noneOf:\n- $ref: '#/$defs/Measure'\nx-jsonld-prefixes:\n  dqm: http://www.opengis.net/def/metamodel/isodqm/\n",
+  "gitRepository": "https://github.com/ogcincubator/dqm-schemas",
+  "gitPath": "_sources/measure"
+}

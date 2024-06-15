@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DQM extraneous nodes",
+  "$defs": {
+    "Measure": {
+      "properties": {
+        "value": {
+          "type": "number",
+          "x-jsonld-id": "http://www.opengis.net/def/metamodel/isodqm/measureValue"
+        },
+        "units": {
+          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json",
+          "x-jsonld-type": "@id",
+          "x-jsonld-id": "http://www.opengis.net/def/metamodel/isodqm/units",
+          "x-jsonld-base": "https://qudt.org/vocab/unit/"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/Measure"
+    }
+  ],
+  "x-jsonld-prefixes": {
+    "dqm": "http://www.opengis.net/def/metamodel/isodqm/"
+  }
+}
