@@ -1,0 +1,9 @@
+- title: STAC item with link to provenance
+  content: |
+    Example GeoJSON feature with a DQM property
+
+  snippets:
+    - language: json
+      ref: feature.json
+      base-uri: 'https://example.com/dqm/example1/'
+

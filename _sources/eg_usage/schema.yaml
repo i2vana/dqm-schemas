@@ -1,0 +1,14 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Example of a sinmple GeoJSON Feature specialisation with a DQM measure'
+$defs:
+  MyFeature:
+    allOf:
+      - $ref: bblocks://ogc.geo.features.feature
+      - properties:
+          properties:
+            allOf:
+              - $ref: bblocks://ogc.dqm.schemas.extraneous_nodes
+              - required:
+                  - extraneous_nodes
+
+$ref: "#/$defs/MyFeature"

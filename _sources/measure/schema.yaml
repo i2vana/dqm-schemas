@@ -7,6 +7,5 @@ $defs:
         type: number
       units:
         $ref: bblocks://ogc.ogc-utils.iri-or-curie
-oneOf:
-  - $ref: "#/$defs/Measure"
+$ref: "#/$defs/Measure"
 

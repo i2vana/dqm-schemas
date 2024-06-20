@@ -1,0 +1,24 @@
+{
+  "name": "Example Feature with DQM",
+  "highlighted": true,
+  "abstract": "Example of defining a feature with a specific DQM property",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
+  "sources": [
+    {
+      "title": "GeoDCAT Specification",
+      "link": "http://www.opengis.net/def/metamodel/profiles/geodcat"
+    },
+     {
+      "title": "PROV-O Specification",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "scope": "dev",
+  "tags": ["DCAT", "profile", "Records", "STAC"]
+}

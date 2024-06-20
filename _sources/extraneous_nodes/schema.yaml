@@ -1,5 +1,16 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
 description: 'DQM extraneous nodes'
 $defs:
-  extraneous_nodes:
+  extraneous_nodes_value:
     type: number
+# this defines a canonical property name for this measure.
+#   note that applications can define this to be required,
+#   or use the "#/$defs/extraneous_nodes_value" reference to define an alternative property name.
+#   in this case they need to define a JSON-LD context mapping the custom property to the measure URI
+#   or expect clients to interrogate the schema reference to determine the measure being referenced
+
+properties:
+  extraneous_nodes:
+    $ref: "#/$defs/extraneous_nodes_value"
+
+
