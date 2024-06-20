@@ -1,5 +1,5 @@
 Validation report for ogc.dqm.schemas.extraneous_nodes - DQM 21 extraneous nodes
-Generated 2024-06-15T14:14:34.938840+00:00
+Generated 2024-06-20T10:56:52.690593+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

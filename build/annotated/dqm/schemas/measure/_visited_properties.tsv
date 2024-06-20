@@ -1,3 +1,5 @@
 path	@id
 /value	http://www.opengis.net/def/metamodel/isodqm/measureValue
 /units	http://www.opengis.net/def/metamodel/isodqm/units
+/Measure/value	http://www.opengis.net/def/metamodel/isodqm/measureValue
+/Measure/units	http://www.opengis.net/def/metamodel/isodqm/units

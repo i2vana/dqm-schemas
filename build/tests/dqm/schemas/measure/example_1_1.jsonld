@@ -1,5 +1,5 @@
 {
   "value": 3,
   "units": "M",
-  "@context": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/context.jsonld"
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/context.jsonld"
 }

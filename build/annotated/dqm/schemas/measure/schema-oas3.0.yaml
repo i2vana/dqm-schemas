@@ -13,27 +13,27 @@ x-defs:
         pattern: ^[^:<>{}|\\^`"\s]*(\?[^<>{}|\\^`"\s]*)?(#[^<>{}|\\^`"\s]*)?$
       Single:
         anyOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/IRI
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/CURIE
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/LocalPart
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/IRI
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/CURIE
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/LocalPart
       Multiple:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
         - type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+            $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
       MultipleOrObject:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Multiple
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Multiple
         - type: object
       MultipleOrObjectOrNull:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject
         nullable: true
     x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+    - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
 description: DQM extraneous nodes
 $defs:
   Measure:
@@ -46,9 +46,9 @@ $defs:
         x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/units
         x-jsonld-base: https://qudt.org/vocab/unit/
         allOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
+        - $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
 oneOf:
-- $ref: https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/$defs/Measure
+- $ref: https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.yaml#/$defs/Measure
 x-jsonld-prefixes:
   dqm: http://www.opengis.net/def/metamodel/isodqm/
 x-schema-version: https://json-schema.org/draft/2020-12/schema

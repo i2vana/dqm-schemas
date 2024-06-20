@@ -57,8 +57,8 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/extraneous_nodes/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fdqm-schemas%2Fmaster%2Fbuild%2Ftests%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fdqm-schemas%2Fbuild%2Ftests%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -69,14 +69,14 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
   "http://example.com/myObject": {
     "extraneous_nodes": 2
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld"
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/extraneous_nodes/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fdqm-schemas%2Fmaster%2Fbuild%2Ftests%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fdqm-schemas%2Fbuild%2Ftests%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -94,7 +94,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/tests/dqm/schemas/extraneous_nodes/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -116,12 +116,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fdqm-schemas%2Fmaster%2Fbuild%2Fannotated%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fdqm-schemas%2Fbuild%2Fannotated%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/schema.json</a>
+* YAML version: <a href="https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/schema.yaml" target="_blank">https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/schema.json" target="_blank">https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/schema.json</a>
 
 
 # JSON-LD Context
@@ -136,10 +136,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fdqm-schemas%2Fmaster%2Fbuild%2Fannotated%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fdqm-schemas%2Fbuild%2Fannotated%2Fdqm%2Fschemas%2Fextraneous_nodes%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/dqm-schemas/master/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld</a>
+<a href="https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld" target="_blank">https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld</a>
 
 # References
 
