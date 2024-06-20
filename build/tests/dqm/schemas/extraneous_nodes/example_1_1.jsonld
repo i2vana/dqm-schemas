@@ -1,6 +1,4 @@
 {
-  "http://example.com/myObject": {
-    "extraneous_nodes": 2
-  },
+  "extraneous_nodes": 2,
   "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld"
 }

@@ -2,12 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "DQM extraneous nodes",
   "$defs": {
-    "extraneous_nodes": {
+    "extraneous_nodes_value": {
       "type": "number"
     }
   },
-  "x-jsonld-extra-terms": {
-    "extraneous_nodes": "http://www.opengis.net/def/metamodel/isodqm/21"
+  "properties": {
+    "extraneous_nodes": {
+      "$ref": "#/$defs/extraneous_nodes_value",
+      "x-jsonld-id": "http://www.opengis.net/def/metamodel/isodqm/21"
+    }
   },
   "x-jsonld-prefixes": {
     "dqm": "http://www.opengis.net/def/metamodel/isodqm/"

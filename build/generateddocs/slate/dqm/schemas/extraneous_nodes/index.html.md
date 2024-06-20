@@ -49,9 +49,8 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 
 ```json
-{ "http://example.com/myObject": {
+{
       "extraneous_nodes": 2
-   }
 }
 ```
 
@@ -66,9 +65,7 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 ```jsonld
 {
-  "http://example.com/myObject": {
-    "extraneous_nodes": 2
-  },
+  "extraneous_nodes": 2,
   "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld"
 }
 ```
@@ -84,10 +81,9 @@ The numeric properties "b" and "c" have an example SHACL rule that if c is prese
 
 ```turtle
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
-@prefix ns1: <http://example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] ns1:myObject [ dqm:21 2 ] .
+[] dqm:21 2 .
 
 
 ```
@@ -107,10 +103,12 @@ The content of this example.
 $schema: https://json-schema.org/draft/2020-12/schema
 description: DQM extraneous nodes
 $defs:
-  extraneous_nodes:
+  extraneous_nodes_value:
     type: number
-x-jsonld-extra-terms:
-  extraneous_nodes: http://www.opengis.net/def/metamodel/isodqm/21
+properties:
+  extraneous_nodes:
+    $ref: '#/$defs/extraneous_nodes_value'
+    x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/21
 x-jsonld-prefixes:
   dqm: http://www.opengis.net/def/metamodel/isodqm/
 

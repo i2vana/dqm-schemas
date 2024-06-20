@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "dqm-schema-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-04-05",
+  "dateOfLastChange": "2024-06-20",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -42,24 +42,24 @@
       "snippets": [
         {
           "language": "json",
-          "code": "{ \"http://example.com/myObject\": {\n      \"extraneous_nodes\": 2\n   }\n}",
+          "code": "{\n      \"extraneous_nodes\": 2\n}",
           "base-uri": "http://example.com/",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"http://example.com/myObject\": {\n    \"extraneous_nodes\": 2\n  },\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld\"\n}",
+          "code": "{\n  \"extraneous_nodes\": 2,\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld\"\n}",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .\n@prefix ns1: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ns1:myObject [ dqm:21 2 ] .\n\n",
+          "code": "@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] dqm:21 2 .\n\n",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: DQM extraneous nodes\n$defs:\n  extraneous_nodes:\n    type: number\nx-jsonld-extra-terms:\n  extraneous_nodes: http://www.opengis.net/def/metamodel/isodqm/21\nx-jsonld-prefixes:\n  dqm: http://www.opengis.net/def/metamodel/isodqm/\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: DQM extraneous nodes\n$defs:\n  extraneous_nodes_value:\n    type: number\nproperties:\n  extraneous_nodes:\n    $ref: '#/$defs/extraneous_nodes_value'\n    x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/21\nx-jsonld-prefixes:\n  dqm: http://www.opengis.net/def/metamodel/isodqm/\n",
   "gitRepository": "https://github.com/ogcincubator/dqm-schemas",
   "gitPath": "_sources/extraneous_nodes"
 }
