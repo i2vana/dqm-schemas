@@ -13,16 +13,14 @@
     rdfs:label "Example Feature with DQM" ;
     dct:abstract "Example of defining a feature with a specific DQM property" ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.eg_usage" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/eg_usage/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/eg_usage/" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/eg_usage/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/eg_usage/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.eg_usage" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-06-20"^^xsd:date ;
+    dct:modified "2024-11-18"^^xsd:date ;
     dct:source <http://www.opengis.net/def/metamodel/profiles/geodcat>,
         <https://www.w3.org/TR/prov-o/> ;
     skos:inScheme <https://ogcincubator.github.io/dqm-schemas/> ;
@@ -49,11 +47,9 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.measure" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/measure/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/measure/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/measure/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-06-20"^^xsd:date ;
+    dct:modified "2024-11-18"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://ogcincubator.github.io/dqm-schemas/> ;
     dcat:keyword "templates" ;
@@ -75,14 +71,12 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.extraneous_nodes" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/extraneous_nodes/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/extraneous_nodes/" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/extraneous_nodes/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/extraneous_nodes/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/extraneous_nodes/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-06-20"^^xsd:date ;
+    dct:modified "2024-11-18"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://ogcincubator.github.io/dqm-schemas/> ;
     dcat:keyword "templates" ;
@@ -109,18 +103,18 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-06-20T13:21:18.399439"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-20T13:21:18.339384"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-18T05:57:59.478147"^^xsd:dateTime ;
+    prov:startedAtTime "2024-11-18T05:57:59.408379"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:6744444d9a12db5d5b63ff67aca9209594863c31" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/dqm-schemas/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:679772eaa9d88ddd09a8a07724328462a203961b" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/dqm-schemas/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.47.dev1+g5249c1b" ;
+            dct:hasVersion "0.3.55" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

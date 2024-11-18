@@ -2,12 +2,12 @@
   "name": "Data Quality Measures Schemas",
   "abstract": "Implementation models (JSON/YAML schemas, but potentially XML and RDF)\n",
   "description": "Data Quality Measures may require complex (non-scalar) value objects, in which case canonical schemas for these values are required to achieve interoperability.\n",
-  "modified": "2024-06-20T13:21:16.666162",
+  "modified": "2024-11-18T05:57:57.996646",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6badef16348eb4c240d1a1e4389d783ba62b56b9",
-      "shortCommitId": "\"6badef",
-      "date": "2024-06-18T18:19:19+00:00\""
+      "commitId": "\"39d32ff771f87d20ecb44bfa3d868d5942b51074",
+      "shortCommitId": "\"39d32f",
+      "date": "2024-11-14T12:03:04+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/dqm-schemas",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "dqm-schema-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-06-20",
+      "dateOfLastChange": "2024-11-18",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -62,10 +62,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/extraneous_nodes/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/extraneous_nodes/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.extraneous_nodes"
@@ -82,7 +78,7 @@
       "itemClass": "schema",
       "register": "dqm-schema-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-06-20",
+      "dateOfLastChange": "2024-11-18",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -118,10 +114,6 @@
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/measure/index.json"
         },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/measure/"
-        },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.measure"
@@ -138,7 +130,7 @@
       "itemClass": "schema",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-06-20",
+      "dateOfLastChange": "2024-11-18",
       "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
       "sources": [
         {
@@ -159,8 +151,8 @@
       ],
       "shaclRules": {},
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.dqm.schemas.extraneous_nodes"
+        "ogc.dqm.schemas.extraneous_nodes",
+        "ogc.geo.features.feature"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/schema.yaml",
@@ -179,10 +171,6 @@
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/eg_usage/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/eg_usage/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

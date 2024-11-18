@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "dqm-schema-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-06-20",
+  "dateOfLastChange": "2024-11-18",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -48,7 +48,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"extraneous_nodes\": 2,\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld\",\n  \"extraneous_nodes\": 2\n}",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/extraneous_nodes/example_1_1.jsonld"
         },
         {

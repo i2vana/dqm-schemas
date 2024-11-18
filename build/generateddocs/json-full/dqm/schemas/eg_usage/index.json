@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-06-20",
+  "dateOfLastChange": "2024-11-18",
   "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
   "sources": [
     {
@@ -31,8 +31,8 @@
   ],
   "shaclRules": {},
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.dqm.schemas.extraneous_nodes"
+    "ogc.dqm.schemas.extraneous_nodes",
+    "ogc.geo.features.feature"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/schema.yaml",
@@ -58,7 +58,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"extraneous_nodes\": 3\n  },\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"extraneous_nodes\": 3\n  }\n}",
           "url": "https://ogcincubator.github.io/dqm-schemas/build/tests/dqm/schemas/eg_usage/example_1_1.jsonld"
         },
         {
