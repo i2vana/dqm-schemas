@@ -30,9 +30,9 @@ example using default namespace for UOM
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/context.jsonld",
   "value": 3,
-  "units": "M",
-  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/context.jsonld"
+  "units": "M"
 }
 ```
 
@@ -60,9 +60,9 @@ example using a custom namespace for UOM
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/context.jsonld",
   "value": 27.2,
-  "units": "http://mydomain.org/units/foogles-per-thrunge",
-  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/context.jsonld"
+  "units": "http://mydomain.org/units/foogles-per-thrunge"
 }
 ```
 

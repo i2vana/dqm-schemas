@@ -47,6 +47,7 @@ Example GeoJSON feature with a DQM property
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -64,8 +65,7 @@ Example GeoJSON feature with a DQM property
   },
   "properties": {
     "extraneous_nodes": 3
-  },
-  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/context.jsonld"
+  }
 }
 ```
 

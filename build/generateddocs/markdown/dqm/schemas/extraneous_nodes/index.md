@@ -30,8 +30,8 @@ The content of this example.
 #### jsonld
 ```jsonld
 {
-  "extraneous_nodes": 2,
-  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld"
+  "@context": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/extraneous_nodes/context.jsonld",
+  "extraneous_nodes": 2
 }
 ```
 

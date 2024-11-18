@@ -1,5 +1,5 @@
 Validation report for ogc.dqm.schemas.measure - Measure
-Generated 2024-06-20T13:21:18.231344+00:00
+Generated 2024-11-18T05:57:59.323124+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
