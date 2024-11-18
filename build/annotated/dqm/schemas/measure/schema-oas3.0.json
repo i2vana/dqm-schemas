@@ -90,13 +90,13 @@
       }
     }
   },
-  "oneOf": [
-    {
-      "$ref": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.json#/$defs/Measure"
-    }
-  ],
   "x-jsonld-prefixes": {
     "dqm": "http://www.opengis.net/def/metamodel/isodqm/"
   },
-  "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
+  "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/measure/schema-oas3.0.json#/$defs/Measure"
+    }
+  ]
 }

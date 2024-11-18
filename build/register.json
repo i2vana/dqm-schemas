@@ -2,7 +2,7 @@
   "name": "Data Quality Measures Schemas",
   "abstract": "Implementation models (JSON/YAML schemas, but potentially XML and RDF)\n",
   "description": "Data Quality Measures may require complex (non-scalar) value objects, in which case canonical schemas for these values are required to achieve interoperability.\n",
-  "modified": "2024-06-20T10:56:51.924864",
+  "modified": "2024-06-20T13:21:16.666162",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6badef16348eb4c240d1a1e4389d783ba62b56b9",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "dqm-schema-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2024-06-20",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -82,7 +82,7 @@
       "itemClass": "schema",
       "register": "dqm-schema-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2024-06-20",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -125,6 +125,68 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.measure"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.dqm.schemas.eg_usage",
+      "name": "Example Feature with DQM",
+      "highlighted": true,
+      "abstract": "Example of defining a feature with a specific DQM property",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2024-06-20",
+      "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
+      "sources": [
+        {
+          "title": "GeoDCAT Specification",
+          "link": "http://www.opengis.net/def/metamodel/profiles/geodcat"
+        },
+        {
+          "title": "PROV-O Specification",
+          "link": "https://www.w3.org/TR/prov-o/"
+        }
+      ],
+      "scope": "dev",
+      "tags": [
+        "DCAT",
+        "profile",
+        "Records",
+        "STAC"
+      ],
+      "shaclRules": {},
+      "dependsOn": [
+        "ogc.geo.features.feature",
+        "ogc.dqm.schemas.extraneous_nodes"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/dqm-schemas/_sources/eg_usage/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/dqm-schemas/build/annotated/dqm/schemas/eg_usage/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/dqm-schemas/_sources/eg_usage/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/dqm-schemas/blob/master/build/tests/dqm/schemas/eg_usage/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/markdown/dqm/schemas/eg_usage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/json-full/dqm/schemas/eg_usage/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/dqm-schemas/build/generateddocs/slate-build/dqm/schemas/eg_usage/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/dqm-schemas/bblock/ogc.dqm.schemas.eg_usage"
         }
       }
     }

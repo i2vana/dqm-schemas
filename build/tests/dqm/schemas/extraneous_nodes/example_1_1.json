@@ -1,5 +1,3 @@
 {
-  "http://example.com/myObject": {
-    "extraneous_nodes": 2
-  }
+  "extraneous_nodes": 2
 }

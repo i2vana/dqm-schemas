@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "dqm-schema-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-04-05",
+  "dateOfLastChange": "2024-06-20",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -82,7 +82,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: DQM extraneous nodes\n$defs:\n  Measure:\n    properties:\n      value:\n        type: number\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/measureValue\n      units:\n        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml\n        x-jsonld-type: '@id'\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/units\n        x-jsonld-base: https://qudt.org/vocab/unit/\noneOf:\n- $ref: '#/$defs/Measure'\nx-jsonld-prefixes:\n  dqm: http://www.opengis.net/def/metamodel/isodqm/\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: DQM extraneous nodes\n$defs:\n  Measure:\n    properties:\n      value:\n        type: number\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/measureValue\n      units:\n        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml\n        x-jsonld-type: '@id'\n        x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/units\n        x-jsonld-base: https://qudt.org/vocab/unit/\n$ref: '#/$defs/Measure'\nx-jsonld-prefixes:\n  dqm: http://www.opengis.net/def/metamodel/isodqm/\n",
   "gitRepository": "https://github.com/ogcincubator/dqm-schemas",
   "gitPath": "_sources/measure"
 }

@@ -17,11 +17,7 @@
       }
     }
   },
-  "oneOf": [
-    {
-      "$ref": "#/$defs/Measure"
-    }
-  ],
+  "$ref": "#/$defs/Measure",
   "x-jsonld-prefixes": {
     "dqm": "http://www.opengis.net/def/metamodel/isodqm/"
   }

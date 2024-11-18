@@ -1,6 +1,5 @@
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
-@prefix ns1: <http://example.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] ns1:myObject [ dqm:21 2 ] .
+[] dqm:21 2 .
 

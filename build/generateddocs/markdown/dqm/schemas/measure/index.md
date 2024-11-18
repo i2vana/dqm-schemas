@@ -93,8 +93,7 @@ $defs:
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.opengis.net/def/metamodel/isodqm/units
         x-jsonld-base: https://qudt.org/vocab/unit/
-oneOf:
-- $ref: '#/$defs/Measure'
+$ref: '#/$defs/Measure'
 x-jsonld-prefixes:
   dqm: http://www.opengis.net/def/metamodel/isodqm/
 
